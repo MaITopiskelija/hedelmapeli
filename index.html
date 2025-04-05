@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedelmäpeli</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        
+        <div class="game-container">
+            <h1>Hedelmäpeli</h1>
+            <p id="money">Rahat: 50€</p>
+            <div id="message"></div>
+            <div class="reels-container">
+                <div class="reels">
+                    <span class="reel-box" id="reel0">❔</span>
+                    <span class="reel-box" id="reel1">❔</span>
+                    <span class="reel-box" id="reel2">❔</span>
+                    <span class="reel-box" id="reel3">❔</span>
+                </div>
+                <div class="locks">
+                    <button class="lock-item" id="lock0">🔓</button>
+                    <button class="lock-item" id="lock1">🔓</button>
+                    <button class="lock-item" id="lock2">🔓</button>
+                    <button class="lock-item" id="lock3">🔓</button>
+                </div>
+                
+
+            </div>
+            <div class="controls">
+                <label for="bet">Panos: </label>
+                <input type="number" id="bet" min="1" value="1">
+                <button id="spin">Pelaa</button>
+            </div>
+            
+             <div class="win-multipliers">
+                <h2>Voittokertoimet</h2>
+                <ul>
+                    <li>Neljä x 7  = 10 x panos</li>
+                    <li>Neljä x omena =  6 x panos</li>
+                    <li>Neljä x meloni  = 5 x panos</li>
+                    <li>Neljä x päärynä  = 4 x panos</li>
+                    <li>Neljä x kirsikka  = 3 x panos</li>
+                    <li>Kolme kertaa 7  = 5 x panos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
