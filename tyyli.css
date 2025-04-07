@@ -86,7 +86,7 @@ h1 {
 
 .locks {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .lock-item {
@@ -193,4 +193,29 @@ button#spin:hover {
     .win-multipliers li {
         font-size: 14px;
     }
+}
+.lock-button {
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.lock-button.locked {
+    background-color: #5b75ca;
+}
+
+.lock-button.disabled {
+    background-color: #eee;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#gameOver {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+    display: none; /* Piilotetaan oletuksena */
 }
